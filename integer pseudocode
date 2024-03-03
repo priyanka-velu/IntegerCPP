@@ -1,0 +1,35 @@
+START
+    DECLARE variables a, b, c as integers
+    
+    PROMPT the user to enter three integer values
+    READ and STORE the input values in variables a, b, and c
+
+    DECLARE variables ptrA, ptrB, ptrC as integer pointers
+
+    // ALLOCATE memory for integer pointers:
+    ptrA = allocate memory for an integer
+    ptrB = allocate memory for an integer
+    ptrC = allocate memory for an integer
+
+    // ASSIGN values to pointers:
+    *ptrA = a
+    *ptrB = b
+    *ptrC = c
+
+    OUTPUT "Contents of variables:"
+    OUTPUT "a: " + a
+    OUTPUT "b: " + b
+    OUTPUT "c: " + c
+
+    OUTPUT "Contents of pointers:"
+    OUTPUT "ptrA: " + *ptrA
+    OUTPUT "ptrB: " + *ptrB
+    OUTPUT "ptrC: " + *ptrC
+
+    // Free memory allocated for pointers:
+    deallocate memory for ptrA
+    deallocate memory for ptrB
+    deallocate memory for ptrC
+
+STOP
+
